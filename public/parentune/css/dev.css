@@ -1,0 +1,132 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* .swiper-button-prev {
+    left: 10px;
+    background-image: url(/parentune/images/icon-left-arrow.png);
+    right: auto;
+}
+.swiper-button-next {
+    right: 10px;
+    background-image: url(/parentune/images/icon-right-arrow.png);
+    left: auto;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 40%;
+    width:43px;
+    height:43px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 27px 44px;
+    -webkit-background-size: 27px 44px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.nav-link-tab{
+    margin: 0 10px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #52aab6;
+}
+
+.nav-link-tab.active{
+    border-bottom: 2px solid #52aab6;
+    color: #52aab6;
+}
+
+.nav-link-tab, .nav-link-tab:hover,
+.nav-link-tab:focus{
+    color: #52aab6;
+}
+
+.br-10{
+    border-radius: 10px;
+}
+
+/* Break points */
+ @media (max-width: 575.98px) {
+    .swiper-slide {
+        padding-left: 15px;
+        height: 170px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .logo_parentune {
+        background-image: url(/parentune/images/Parentune_logo.png);
+        width: 50px;
+        height: 50px;
+        background-size: 100%;
+        background-position: center;
+        display: block;
+        background-repeat: no-repeat;
+    }
+
+    .navbar-brand img{
+        display: none;
+    }
+ }
+
+ @media (max-width: 767.98px) {
+ }
+
+ @media (max-width: 991.98px) {
+
+ }
+
+ @media (max-width: 1199.98px) {
+
+ }
+
+ @media (max-width: 1399.98px) {
+
+ }
